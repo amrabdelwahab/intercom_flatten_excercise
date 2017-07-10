@@ -18,5 +18,15 @@ describe NestedArray do
       let(:array) { [[[[]]]] }
       specify { expect(subject.flatten).to match_array [] }
     end
+
+    context 'when the array is a mixture of empty arrays and numbers' do
+      let(:array) { [1, [[[]]]] }
+      specify { expect(subject.flatten).to match_array [1] }
+    end
+
+    context 'when the array is a mixture of non empty arrays and numbers' do
+      let(:array) { [1, [[[2]]]] }
+      specify { expect(subject.flatten).to match_array [1, 2] }
+    end
   end
 end
