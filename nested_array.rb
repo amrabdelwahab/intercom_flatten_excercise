@@ -6,6 +6,15 @@ class NestedArray
 
   def flatten
     return [] if @array.empty?
-    @array
+    flat_array = []
+    @array.each do |item|
+      if item.is_a? Array
+        flat_array
+      else
+        flat_array << item
+      end
+    end
+
+    flat_array
   end
 end
