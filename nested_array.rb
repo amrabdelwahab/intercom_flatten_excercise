@@ -5,6 +5,7 @@ class NestedArray
   end
 
   def flatten
-    []
+    return [] if @array.empty?
+    @array
   end
 end
