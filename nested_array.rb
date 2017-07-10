@@ -9,7 +9,7 @@ class NestedArray
     flat_array = []
     @array.each do |item|
       if item.is_a? Array
-        flat_array
+        flat_array += NestedArray.new(item).flatten
       else
         flat_array << item
       end
