@@ -6,12 +6,10 @@ class NestedArray
 
   def flatten
     return [] if @array.empty?
-    flat_array = []
-    @array.each do |item|
-      flat_array += flatten_item(item)
-    end
 
-    flat_array
+    @array.each_with_object([]) do |item, flat_array|
+      flat_array.concat flatten_item(item)
+    end
   end
 
   private
