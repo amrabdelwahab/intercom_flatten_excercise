@@ -1,0 +1,4 @@
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+Style/BlockComments:
+  Enabled: false
