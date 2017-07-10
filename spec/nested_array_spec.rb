@@ -1,3 +1,5 @@
+require_relative '../nested_array'
+
 describe NestedArray do
   let(:array) { [] }
   subject { described_class.new(array) }
