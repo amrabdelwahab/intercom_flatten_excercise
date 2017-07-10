@@ -13,5 +13,10 @@ describe NestedArray do
       let(:array) { [1, 2, 3] }
       specify { expect(subject.flatten).to match_array [1, 2,3] }
     end
+
+    context 'when the array is nested yet still empty' do
+      let(:array) { [[[[]]]] }
+      specify { expect(subject.flatten).to match_array [] }
+    end
   end
 end
