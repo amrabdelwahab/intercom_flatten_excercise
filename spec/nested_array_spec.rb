@@ -1,4 +1,4 @@
-require_relative '../nested_array'
+require './lib/nested_array'
 
 describe NestedArray do
   let(:array) { [] }
