@@ -1,6 +1,8 @@
 # NestedArray Flatten Exercise
 
 [![Build Status](https://travis-ci.org/amrabdelwahab/intercom_flatten_excercise.svg)](https://travis-ci.org/amrabdelwahab/intercom_flatten_excercise)
+[![Coverage Status](https://coveralls.io/repos/github/amrabdelwahab/intercom_flatten_excercise/badge.svg?branch=master)](https://coveralls.io/github/amrabdelwahab/intercom_flatten_excercise?branch=master)
+
 
 ## Problem Description
 
