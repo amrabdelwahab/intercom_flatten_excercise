@@ -1,5 +1,7 @@
 # NestedArray Flatten Exercise
 
+[![Build Status](https://travis-ci.org/amrabdelwahab/intercom_flatten_excercise.svg)](https://travis-ci.org/amrabdelwahab/intercom_flatten_excercise)
+
 ## Problem Description
 
 You can check the entire context [here](https://blog.intercom.com/how-we-hire-engineers-part-1/) but this exercise is aiming to flatten an array of arbitrarily nested arrays of integers into a flat array of integers. e.g. `[[1,2,[3]],4] -> [1,2,3,4]`. 
