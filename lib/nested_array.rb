@@ -5,6 +5,7 @@ class NestedArray
   end
 
   def flatten
+    return unless @array
     return [] if @array.empty?
 
     @array.each_with_object([]) do |item, flat_array|
