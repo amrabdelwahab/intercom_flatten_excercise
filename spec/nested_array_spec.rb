@@ -33,5 +33,15 @@ describe NestedArray do
       let(:array) { nil }
       specify { expect(subject.flatten).to be nil }
     end
+
+    context 'when the array is not an array' do
+      let(:array) { 1 }
+      specify do
+        expect { subject.flatten }
+          .to output(
+            "Please Make sure to provide an array as an input to the class!\n"
+          ).to_stdout
+      end
+    end
   end
 end
