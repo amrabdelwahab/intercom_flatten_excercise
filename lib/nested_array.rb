@@ -10,6 +10,8 @@ class NestedArray
     @array.each_with_object([]) do |item, flat_array|
       flat_array.concat flatten_item(item)
     end
+  rescue NoMethodError
+    puts 'Please Make sure to provide an array as an input to the class!'
   end
 
   private
