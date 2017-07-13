@@ -28,5 +28,10 @@ describe NestedArray do
       let(:array) { [1, [[[2]]]] }
       specify { expect(subject.flatten).to match_array [1, 2] }
     end
+
+    context 'when the array is nil' do
+      let(:array) { nil }
+      specify { expect(subject.flatten).to be nil }
+    end
   end
 end
